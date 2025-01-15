@@ -66,3 +66,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.movieform {
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  border-color: brown;
+}
