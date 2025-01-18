@@ -1,11 +1,8 @@
 import "./Button.css";
-import Input from "../components/Input"
-const Button = (onClick) => {
-    const Hendlecklick = () => {
-         onClick()
-    }
+const Button = (handleClick: ()=>void) => {
+    
     return(
-      <button className="button" onClick={Hendlecklick}>Генерировать</button>            
+      <button className="button" onClick={handleClick}>Генерировать</button>            
     )
     
 }
