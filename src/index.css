@@ -23,6 +23,7 @@ a:hover {
 }
 
 body {
+  background-image: url("phon.jpg");
   margin: 0;
   display: flex;
   place-items: center;
@@ -67,9 +68,3 @@ button:focus-visible {
   }
 }
 
-.movieform {
-  width: 500px;
-  height: 500px;
-  border-radius: 5px;
-  border-color: brown;
-}

@@ -1,15 +1,18 @@
-import { useState } from "react";
-
-const Input = () => {
-    const [text, setText] = useState("");
-return(
-<div>
-    <input  className="input-txt" type="text" value={text}
-                        onChange={(e) => setText(e.target.value)}
-            placeholder="Введите текст для генераций QRcode"
-        ></input>
-</div>
-)
-} 
+interface IInput {
+    value: string
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+    placeholder: string
+}
+const Input = ({ value, onChange, placeholder }: IInput) => {
+    return (
+        <div>
+            <input className="input-txt" type="text"
+                placeholder={placeholder}
+                value={value}
+                onChange={onChange} />
+        </div>
+    )
+}
+// Введите текст для генераций QRcode
 
 export default Input;
