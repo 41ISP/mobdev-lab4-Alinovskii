@@ -1,7 +1,10 @@
-const QRCode = () => {
+interface QQRcode {
+    img: string
+}
+const QRCode = ({img}: QQRcode) => {
     return(
-       <img>
-       </img>
+       <img src={img}/>
+    
     )
 }
 

@@ -6,10 +6,12 @@ import "./MainPage.css"
 
 const MainPage = () => {
  const [input, setInput] = useState("");
+const [link, setLink] = useState("");
  const onclick = () =>{
-    console.log("https://www.qrtag.net/api/qr_12.svg?url=https://" + input)
+    ("https://www.qrtag.net/api/qr_12.svg?url=https://" + input)
+   //  https://www.qrtag.net/api/qr_12.svg?url=https://www.qrtag.net
+   //  https://www.qrtag.net/api/qr_12.svg?url=https://google.com
  }
-
  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value)
  }
@@ -18,7 +20,9 @@ const MainPage = () => {
         <div className="movieform">
        <Input value={input} onChange={handleChange} placeholder={""}/>
        <Button onClick={onclick}></Button>
-       <QRCode></QRCode>
+       <div className="image">
+       <QRCode img={`https://www.qrtag.net/api/qr_12.svg?url=https://${input}`} ></QRCode>
+       </div>
         </div>
     )
     
