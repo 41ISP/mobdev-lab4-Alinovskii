@@ -1,11 +1,11 @@
 .movieform{
     display: flex;
-    justify-content: top;
+    justify-content: center;
     width: 1000px;
-    height: 750px;
+    height: 1250px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 40;
+    left: 00;
     overflow: auto;
   }
   .image {

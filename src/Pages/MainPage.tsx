@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import QRCode from "../components/QRCode";
 import { SetStateAction, useState } from "react";
 import "./MainPage.css"
+import { Link } from "react-router-dom";
 
 const MainPage = () => {
  const [input, setInput] = useState("");
@@ -22,6 +23,7 @@ const [link, setLink] = useState("");
        <Button onClick={onclick}></Button>
        <div className="image">
        <QRCode img={link} ></QRCode>
+       <Link to="/">Нажми чтобы посмотреть историю генераций.</Link>
        </div>
         </div>
     )
