@@ -8,7 +8,7 @@ const MainPage = () => {
  const [input, setInput] = useState("");
 const [link, setLink] = useState("");
  const onclick = () =>{
-    ("https://www.qrtag.net/api/qr_12.svg?url=https://" + input)
+   setLink("https://quickchart.io/qr?text=" + encodeURIComponent(input));
    //  https://www.qrtag.net/api/qr_12.svg?url=https://www.qrtag.net
    //  https://www.qrtag.net/api/qr_12.svg?url=https://google.com
  }
@@ -21,7 +21,7 @@ const [link, setLink] = useState("");
        <Input value={input} onChange={handleChange} placeholder={""}/>
        <Button onClick={onclick}></Button>
        <div className="image">
-       <QRCode img={`https://www.qrtag.net/api/qr_12.svg?url=https://${input}`} ></QRCode>
+       <QRCode img={link} ></QRCode>
        </div>
         </div>
     )
