@@ -1,0 +1,9 @@
+.history-page{
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 100vh; 
+    margin: 0; 
+    margin-left: 50vh;
+}
