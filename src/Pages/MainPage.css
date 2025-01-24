@@ -1,9 +1,10 @@
 .movieform{
     display: flex;
     justify-content: center;
-    width: 1000px;
-    height: 1250px;
-    top: 40;
+    width: 100px;
+    top: 50%;
+    margin-left: 100vh;
+    margin-top: 10vh;
   }
   .image {
     justify-content: center;
@@ -11,7 +12,11 @@
     height: 200px;
   }
   
-  .Link{
-    color:limegreen;
+  .Link{ 
+      font-size: 20pt;
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: rgb(155, 42, 42);
   }
   

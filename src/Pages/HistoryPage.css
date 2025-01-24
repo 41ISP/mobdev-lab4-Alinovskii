@@ -1,19 +1,24 @@
 .history-page{
-    font-family: Comic Sans, Comic Sans MS, cursive;
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
-    height: 100vh; 
-    margin: 0; 
-    margin-left: 50vh;
+    margin-left: 9vh;
+    margin-top: -5vh;
 }
 .h1{
-    color: brown;
+   align-content: center;
+    color: rgb(4, 112, 253);
 }
 .mainform{
-    display: flex;
-    justify-content: center;
-    width: 1000px;
-    height: 1250px;
-    top: 40;
+    color: goldenrod;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100px;
+    gap: 20px;
+    margin-right: 150vh;
+    margin-top: 10vh;
+}
+.list{
+    font-size: 20pt;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(243, 114, 9);
 }

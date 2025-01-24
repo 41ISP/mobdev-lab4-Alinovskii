@@ -2,7 +2,7 @@ import { create } from "zustand";
 
 interface IGeneratedQR {
     link: string
-    timestamp?: Date
+    timestamp?: number
 }
 
 interface IQRStore {
