@@ -32,12 +32,12 @@ const MainPage = () => {
 
   return (
     <div className="movieform">
+        <Link className="Link" to={URLs.historyPage}><img src={List}/>История генераций.</Link>
+      <h1 className="h2">QRcode Генерация</h1>
       <Input  value={input} onChange={handleChange} placeholder={"Введите текст"} />
       <Button onClick={onclick}></Button>
-      <div className="image">  
         <QRCode img={link} ></QRCode>
-      </div>
-      <Link className="Link" to={URLs.historyPage}><img src={List}/>История генераций.</Link>
+    
     </div>
   )
 

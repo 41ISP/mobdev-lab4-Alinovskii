@@ -18,11 +18,11 @@ const HistoryPage = () => {
   }
   return (
     <div className="history-page">
-      <h1 className="h1">История ваших запросов.</h1>
-      <Link className="list" to="/"><img src={List}/>Генерация.</Link>
+      <h1 className="h1">История ваших запросов</h1>
+      <Link className="list" to="/"><img src={List}/>Генерация</Link>
       <div className="mainform">
         {history.map((qr) => (
-          <div className="qr" key={qr.link}>
+          <div className={`qr${qr.link.length > 120 ? " qr--3" : qr.link.length > 80 ? " qr--2": qr.link.length > 40 ? " qr--1" : ""}`} key={qr.link}>
             <h2>{qr.link}</h2>
             {qr.timestamp && (
               <p>{qr.timestamp.toString()}</p>

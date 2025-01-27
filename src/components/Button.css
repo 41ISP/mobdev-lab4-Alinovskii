@@ -2,6 +2,8 @@
     width: 150px;
     height: 35px;
     padding: 10px 20px;
+    justify-content: center;
+    margin-left: 17vh;
     color: maroon;
     background: linear-gradient(90deg, #ff7eb3, #8e44ad);
     border: none;

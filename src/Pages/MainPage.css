@@ -1,32 +1,28 @@
 .movieform{
     display: flex;
     justify-content: center;
-    width: 100px;
-    margin-left: 90vh;
+    width: 500px;
+    margin-left: 70vh;
+    margin-top: 10vh;
     margin-bottom: 50%;
     gap: 10px;
-    
-  }
-  .image {
-    justify-content: center;
-    position: absolute;
-    top: 30vh;
- 
-    padding: 3px 8px;
-    color: #fff;
-    z-index: 1;
-    width: 200px;
-    height: 200px;
-    display: flex;
+    padding: 30px;
+    background: rgba(143, 11, 11, 0.1);
+    border: 2px solid rgba(116, 7, 7, 0.3);
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
     flex-direction: column;
   }
-  
-  .Link{ 
-      font-size: 20pt;
-      position: absolute;
-      top: 0;
-      right: 0;
-      color: rgb(255, 94, 0);
-  }
+
+.Link{
+  color: orange;
+  font-size: 20px;
+  margin-left: 55%;
+}
+
+.h2{
+  justify-content: center;
+  margin-left: 10px;
+}
 
   

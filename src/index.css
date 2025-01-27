@@ -23,8 +23,13 @@ a:hover {
 }
 
 body {
-  background-image: url("https://avatars.mds.yandex.net/i?id=3c7938761ec078af14eeebd31fe32b5d_l-7043127-images-thumbs&n=13");
+ 
   margin: 0;
+  display: flex;
+
+  background: linear-gradient(135deg, #2e9c67, #8e44ad, #041f3a);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
   display: flex;
   place-items: center;
   min-width: 320px;
