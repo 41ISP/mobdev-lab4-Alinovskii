@@ -2,14 +2,23 @@
     display: flex;
     justify-content: center;
     width: 100px;
-    top: 50%;
-    margin-left: 100vh;
-    margin-top: 10vh;
+    margin-left: 90vh;
+    margin-bottom: 50%;
+    gap: 10px;
+    
   }
   .image {
     justify-content: center;
+    position: absolute;
+    top: 30vh;
+ 
+    padding: 3px 8px;
+    color: #fff;
+    z-index: 1;
     width: 200px;
     height: 200px;
+    display: flex;
+    flex-direction: column;
   }
   
   .Link{ 
@@ -19,4 +28,5 @@
       right: 0;
       color: rgb(255, 94, 0);
   }
+
   

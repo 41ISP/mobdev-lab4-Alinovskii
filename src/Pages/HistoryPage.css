@@ -7,9 +7,10 @@
     color: rgb(4, 112, 253);
 }
 .mainform{
+    border: solid black 5px;
     color: goldenrod;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 100px;
     gap: 20px;
     margin-right: 150vh;

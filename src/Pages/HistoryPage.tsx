@@ -11,10 +11,10 @@ import { create } from "zustand";
 
 
 const HistoryPage = () => {
-  const history = useQRStore((state) => state.history)
-  console.log(history);
+  const {history, delHistory} = useQRStore((state) => state)
+  
   const BackClick =() => {
-
+    
   }
   return (
     <div className="history-page">
@@ -22,13 +22,13 @@ const HistoryPage = () => {
       <Link className="list" to="/"><img src={List}/>Генерация.</Link>
       <div className="mainform">
         {history.map((qr) => (
-          <div className="qr">
+          <div className="qr" key={qr.link}>
             <h2>{qr.link}</h2>
             {qr.timestamp && (
               <p>{qr.timestamp.toString()}</p>
             )}
             <QRCode img={qr.link}/>
-            <button className="deletehistory" onClick={BackClick}><img src={Back}/></button>
+            <button className="deletehistory" onClick={() => delHistory(qr)}><img src={Back}/></button>
           </div>  
         ))}
       </div>

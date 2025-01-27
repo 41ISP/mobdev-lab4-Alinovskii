@@ -11,19 +11,27 @@ interface IGeneratedQR {
 interface IQRStore {
     history: IGeneratedQR[]
     appendHistory: (newQR: IGeneratedQR) => void;
+    delHistory:(QRCode: IGeneratedQR) => void;
 }
 
 export const useQRStore = create<IQRStore>()(
-    persist(
-      (set, get) => ({
+  persist(
+    (set) => ({
         history: [],
-        appendHistory: (QRCode) => set((state) => ({...state, history: [...state.history, QRCode]}))
-      }),
-      {
+        appendHistory: (QRCode) => set((state) => ({
+            ...state,
+            history: [...state.history, QRCode]
+        })),
+            delHistory:(QRCode) => set((state) => ({
+                ...state,
+               history: state.history.filter((el)=> el.link != QRCode.link)
+            }))
+    }),
+    {
         name: 'food-storage',
         storage: createJSONStorage(() => sessionStorage), 
-      },
-    ),
-  )
+    },
+),
+)
 
 export default useQRStore;
