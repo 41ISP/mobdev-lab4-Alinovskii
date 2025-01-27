@@ -1,28 +1,22 @@
 .history-page{
 justify-content: center; 
-padding: 30px;
-background: rgba(143, 11, 11, 0.1);
-border: 2px solid rgba(116, 7, 7, 0.3);
-border-radius: 20px;
-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+
 }
 .h1{
  justify-content: center;
  align-items: center;
  align-content: center;
- margin-left: 30%;
- 
-  
+ margin-left: 30%;  
+ position: absolute;
+ top: 0;
 }
 .mainform{
-    color: goldenrod;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     justify-content: center;
-    margin-top: 10vh;
-    margin-left: 5vh;
-    
+    margin-left: 28vh;
+    margin-top: 15vh;
 }
 .list{
     font-size: 20pt;
@@ -43,4 +37,12 @@ box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
 }
 .deletehistory{
     background-color: transparent;
+    margin-left: -5vh;
+    position: absolute;
+    margin-top: -2vh;
+    
+}
+
+.deletehistory:hover{
+    outline: none;
 }

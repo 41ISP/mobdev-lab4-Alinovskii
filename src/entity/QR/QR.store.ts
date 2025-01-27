@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import QRCode from "../../components/QRCode";
+import Input from "../../components/Input";
 
 interface IGeneratedQR {
     link: string
+    input: string
     timestamp?: number
 }
 

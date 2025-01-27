@@ -17,7 +17,7 @@ const MainPage = () => {
     if(input.length > 0 && input.trim()){
       const newLink = decodeURI("https://quickchart.io/qr?text=" + encodeURIComponent(input)) 
       setLink(newLink);
-      appendHistory({link: newLink, timestamp: (new Date).getTime()})
+      appendHistory({input: input, link: newLink, timestamp: (new Date).getTime()})
       
     } 
 
@@ -26,7 +26,7 @@ const MainPage = () => {
   }
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setInput(e.target.value)
-      if(input.length > 50)
+      if(input.length > 40)
         alert("Вы можете ввести не более 40 символов!!!")
   }
 
