@@ -1,5 +1,6 @@
 .history-page{
-justify-content: center; 
+justify-content: center;
+
 
 }
 .h1{
@@ -9,6 +10,7 @@ justify-content: center;
  margin-left: 30%;  
  position: absolute;
  top: 0;
+ 
 }
 .mainform{
     display: grid;
@@ -17,6 +19,7 @@ justify-content: center;
     justify-content: center;
     margin-left: 28vh;
     margin-top: 15vh;
+   
 }
 .list{
     font-size: 20pt;

@@ -1,9 +1,9 @@
 import Input from "../components/Input"
 import Button from "../components/Button";
 import QRCode from "../components/QRCode";
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import "./MainPage.css"
-import { data, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { URLs } from "../app/URLs";
 import useQRStore from "../entity/QR/QR.store"
 import List from "../../dist/spisok.png"
